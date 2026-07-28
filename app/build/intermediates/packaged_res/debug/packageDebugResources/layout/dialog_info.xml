@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="24dp">
+
+    <ImageView
+        android:layout_width="160dp"
+        android:layout_height="174dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="12dp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/appicon" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="@string/info_title"
+        android:textColor="@color/text_primary"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="@string/company_name"
+        android:textColor="@color/accent"
+        android:textSize="14sp"
+        android:layout_marginBottom="1dp"/>
+
+    <TextView
+        android:id="@+id/websiteText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginBottom="24dp"
+        android:text="@string/github_url"
+        android:textColor="@color/accent"
+        android:textSize="14sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="@string/contact_details"
+        android:textColor="@color/text_secondary"
+        android:textSize="12sp"
+        android:letterSpacing="0.1"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:id="@+id/emailText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="@string/email_address"
+        android:textColor="@color/accent"
+        android:textSize="14sp"
+        android:layout_marginBottom="1dp" />
+
+    <TextView
+        android:id="@+id/websiteText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginBottom="20dp"
+        android:text="@string/website_url"
+        android:textColor="@color/accent"
+        android:textSize="14sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="@string/scan_for_more"
+        android:textColor="@color/text_secondary"
+        android:textSize="12sp"
+        android:letterSpacing="0.1"
+        android:layout_marginBottom="10dp"/>
+
+    <!-- QR Code and Logo Side by Side -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp">
+
+        <ImageView
+            android:id="@+id/bottomLogo"
+            android:layout_width="179dp"
+            android:layout_height="174dp"
+            android:layout_marginStart="1dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/logo" />
+
+        <ImageView
+            android:id="@+id/qrCodeImage"
+            android:layout_width="118dp"
+            android:layout_height="103dp"
+            android:contentDescription="@string/qr_code_desc"
+            android:padding="8dp"
+            android:src="@drawable/qr" />
+
+    </LinearLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/closeButton"
+        android:layout_width="193dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:text="@string/close"
+        android:textColor="@color/text_primary"
+        app:backgroundTint="@color/accent"
+        app:cornerRadius="12dp" />
+
+</LinearLayout>

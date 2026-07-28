@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Hexa Joystick</string>
+    <string name="app_title">ROS2 Turtle Controller</string>
+    <string name="info_title">ROS2 Turtle Controller V1.0</string>
+    <string name="app_subtitle">Hexacon Labs Developer</string>
+    <string name="company_name">Hexacon Labs Developer</string>
+    <string name="contact_details">CONTACT DETAILS</string>
+    <string name="email_address">contact@hexaconlabs.com</string>
+    <string name="website_url">www.hexaconlabs.com</string>
+    <string name="github_url">https://github.com/Hexacon-labs/</string>
+    <string name="scan_for_more">SCAN FOR MORE</string>
+    <string name="close">CLOSE</string>
+    <string name="menu_desc">Menu</string>
+    <string name="qr_code_desc">QR Code</string>
+</resources>

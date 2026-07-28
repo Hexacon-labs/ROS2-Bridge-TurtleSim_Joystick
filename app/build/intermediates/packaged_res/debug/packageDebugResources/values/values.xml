@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="accent">#0f76f5</color>
+    <color name="accent_dark">#00B383</color>
+    <color name="accent_soft">#332B3A44</color>
+    <color name="bg_dark">#0F1115</color>
+    <color name="black">#000000</color>
+    <color name="ic_launcher_background">#000000</color>
+    <color name="joystick_base">#232733</color>
+    <color name="joystick_base_stroke">#f3212d</color>
+    <color name="joystick_knob">#f3212d</color>
+    <color name="joystick_knob_dark">#f3212d</color>
+    <color name="status_error">#FF5470</color>
+    <color name="status_idle">#5A6072</color>
+    <color name="status_ok">#00E5A0</color>
+    <color name="surface">#1B1E24</color>
+    <color name="surface_light">#1A1B1E</color>
+    <color name="text_primary">#FFFFFF</color>
+    <color name="text_secondary">#9AA0A6</color>
+    <string name="app_name">Hexa Joystick</string>
+    <string name="app_subtitle">Hexacon Labs Developer</string>
+    <string name="app_title">ROS2 Turtle Controller</string>
+    <string name="close">CLOSE</string>
+    <string name="company_name">Hexacon Labs Developer</string>
+    <string name="contact_details">CONTACT DETAILS</string>
+    <string name="email_address">contact@hexaconlabs.com</string>
+    <string name="github_url">https://github.com/Hexacon-labs/</string>
+    <string name="info_title">ROS2 Turtle Controller V1.0</string>
+    <string name="menu_desc">Menu</string>
+    <string name="qr_code_desc">QR Code</string>
+    <string name="scan_for_more">SCAN FOR MORE</string>
+    <string name="website_url">www.hexaconlabs.com</string>
+    <style name="Theme.AppSplash" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/bg_dark</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/appicon</item>
+        <item name="postSplashScreenTheme">@style/Theme.HexaJoystick</item>
+    </style>
+    <style name="Theme.HexaJoystick" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/accent</item>
+        <item name="colorPrimaryDark">@color/accent_dark</item>
+        <item name="colorAccent">@color/accent</item>
+        <item name="colorSurface">@color/surface</item>
+        <item name="colorOnSurface">@color/text_primary</item>
+        <item name="android:windowBackground">@color/bg_dark</item>
+        <item name="android:statusBarColor">@color/bg_dark</item>
+        <item name="android:navigationBarColor">@color/bg_dark</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+</resources>

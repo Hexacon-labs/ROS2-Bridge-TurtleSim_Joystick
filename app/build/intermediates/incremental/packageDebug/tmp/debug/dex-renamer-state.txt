@@ -1,0 +1,10 @@
+#Wed Jul 29 01:00:27 GST 2026
+base.0=/home/shibin/Downloads/RosJoystick-Latest/RosJoystick-Latest/app/build/intermediates/dex/debug/mergeExtDexDebug/classes.dex
+base.1=/home/shibin/Downloads/RosJoystick-Latest/RosJoystick-Latest/app/build/intermediates/dex/debug/mergeProjectDexDebug/0/classes.dex
+base.2=/home/shibin/Downloads/RosJoystick-Latest/RosJoystick-Latest/app/build/intermediates/dex/debug/mergeProjectDexDebug/10/classes.dex
+path.0=classes.dex
+path.1=0/classes.dex
+path.2=10/classes.dex
+renamed.0=classes.dex
+renamed.1=classes2.dex
+renamed.2=classes3.dex
