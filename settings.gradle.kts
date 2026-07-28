@@ -12,5 +12,5 @@ dependencyResolutionManagement {
         mavenCentral()
     }
 }
-rootProject.name = "RosJoystick"
+rootProject.name = "ROS2-Bridge-TurtleSim_Joystick"
 include(":app")

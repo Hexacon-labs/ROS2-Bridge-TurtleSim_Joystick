@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /home/shibin/Downloads/RosJoystick-Latest/RosJoystick-Latest/app/src/main/AndroidManifest.xml:2:1-30:12
-INJECTED from /home/shibin/Downloads/RosJoystick-Latest/RosJoystick-Latest/app/src/main/AndroidManifest.xml:2:1-30:12
-INJECTED from /home/shibin/Downloads/RosJoystick-Latest/RosJoystick-Latest/app/src/main/AndroidManifest.xml:2:1-30:12
-INJECTED from /home/shibin/Downloads/RosJoystick-Latest/RosJoystick-Latest/app/src/main/AndroidManifest.xml:2:1-30:12
+ADDED from /home/shibin/Downloads/RosJoystick-Latest/app/src/main/AndroidManifest.xml:2:1-30:12
+INJECTED from /home/shibin/Downloads/RosJoystick-Latest/app/src/main/AndroidManifest.xml:2:1-30:12
+INJECTED from /home/shibin/Downloads/RosJoystick-Latest/app/src/main/AndroidManifest.xml:2:1-30:12
+INJECTED from /home/shibin/Downloads/RosJoystick-Latest/app/src/main/AndroidManifest.xml:2:1-30:12
 MERGED from [com.google.android.material:material:1.12.0] /home/shibin/.gradle/caches/9.0.0/transforms/27903eaa68a071496eb056e927a35e9a/transformed/material-1.12.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.appcompat:appcompat-resources:1.7.0] /home/shibin/.gradle/caches/9.0.0/transforms/990a5645e1a1f56f48eef069c7b50365/transformed/appcompat-resources-1.7.0/AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] /home/shibin/.gradle/caches/9.0.0/transforms/2b5cf2e45f42d4bbac326e42640de6fb/transformed/constraintlayout-2.0.1/AndroidManifest.xml:2:1-11:12
@@ -47,20 +47,20 @@ MERGED from [androidx.documentfile:documentfile:1.0.0] /home/shibin/.gradle/cach
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/shibin/.gradle/caches/9.0.0/transforms/5d1a57aba4f191b53425e3027cc50de1/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.print:print:1.0.0] /home/shibin/.gradle/caches/9.0.0/transforms/f772d4d2e51897c4f8eec8642539ac96/transformed/print-1.0.0/AndroidManifest.xml:17:1-22:12
 	package
-		INJECTED from /home/shibin/Downloads/RosJoystick-Latest/RosJoystick-Latest/app/src/main/AndroidManifest.xml
+		INJECTED from /home/shibin/Downloads/RosJoystick-Latest/app/src/main/AndroidManifest.xml
 	android:versionName
-		INJECTED from /home/shibin/Downloads/RosJoystick-Latest/RosJoystick-Latest/app/src/main/AndroidManifest.xml
+		INJECTED from /home/shibin/Downloads/RosJoystick-Latest/app/src/main/AndroidManifest.xml
 	android:versionCode
-		INJECTED from /home/shibin/Downloads/RosJoystick-Latest/RosJoystick-Latest/app/src/main/AndroidManifest.xml
+		INJECTED from /home/shibin/Downloads/RosJoystick-Latest/app/src/main/AndroidManifest.xml
 	xmlns:android
-		ADDED from /home/shibin/Downloads/RosJoystick-Latest/RosJoystick-Latest/app/src/main/AndroidManifest.xml:2:11-69
+		ADDED from /home/shibin/Downloads/RosJoystick-Latest/app/src/main/AndroidManifest.xml:2:11-69
 uses-permission#android.permission.INTERNET
-ADDED from /home/shibin/Downloads/RosJoystick-Latest/RosJoystick-Latest/app/src/main/AndroidManifest.xml:4:5-67
+ADDED from /home/shibin/Downloads/RosJoystick-Latest/app/src/main/AndroidManifest.xml:4:5-67
 	android:name
-		ADDED from /home/shibin/Downloads/RosJoystick-Latest/RosJoystick-Latest/app/src/main/AndroidManifest.xml:4:22-64
+		ADDED from /home/shibin/Downloads/RosJoystick-Latest/app/src/main/AndroidManifest.xml:4:22-64
 application
-ADDED from /home/shibin/Downloads/RosJoystick-Latest/RosJoystick-Latest/app/src/main/AndroidManifest.xml:6:5-28:19
-INJECTED from /home/shibin/Downloads/RosJoystick-Latest/RosJoystick-Latest/app/src/main/AndroidManifest.xml:6:5-28:19
+ADDED from /home/shibin/Downloads/RosJoystick-Latest/app/src/main/AndroidManifest.xml:6:5-28:19
+INJECTED from /home/shibin/Downloads/RosJoystick-Latest/app/src/main/AndroidManifest.xml:6:5-28:19
 MERGED from [com.google.android.material:material:1.12.0] /home/shibin/.gradle/caches/9.0.0/transforms/27903eaa68a071496eb056e927a35e9a/transformed/material-1.12.0/AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.12.0] /home/shibin/.gradle/caches/9.0.0/transforms/27903eaa68a071496eb056e927a35e9a/transformed/material-1.12.0/AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] /home/shibin/.gradle/caches/9.0.0/transforms/2b5cf2e45f42d4bbac326e42640de6fb/transformed/constraintlayout-2.0.1/AndroidManifest.xml:9:5-20
@@ -78,49 +78,49 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/shibi
 MERGED from [androidx.startup:startup-runtime:1.1.1] /home/shibin/.gradle/caches/9.0.0/transforms/af8c595c7d82f843c9b4466d78bd3d24/transformed/startup-runtime-1.1.1/AndroidManifest.xml:25:5-31:19
 MERGED from [androidx.startup:startup-runtime:1.1.1] /home/shibin/.gradle/caches/9.0.0/transforms/af8c595c7d82f843c9b4466d78bd3d24/transformed/startup-runtime-1.1.1/AndroidManifest.xml:25:5-31:19
 	android:extractNativeLibs
-		INJECTED from /home/shibin/Downloads/RosJoystick-Latest/RosJoystick-Latest/app/src/main/AndroidManifest.xml
+		INJECTED from /home/shibin/Downloads/RosJoystick-Latest/app/src/main/AndroidManifest.xml
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.13.1] /home/shibin/.gradle/caches/9.0.0/transforms/cba2111e9382ec0ab83a31a8d4e4b5a8/transformed/core-1.13.1/AndroidManifest.xml:28:18-86
 	android:label
-		ADDED from /home/shibin/Downloads/RosJoystick-Latest/RosJoystick-Latest/app/src/main/AndroidManifest.xml:10:9-38
+		ADDED from /home/shibin/Downloads/RosJoystick-Latest/app/src/main/AndroidManifest.xml:10:9-38
 	android:roundIcon
-		ADDED from /home/shibin/Downloads/RosJoystick-Latest/RosJoystick-Latest/app/src/main/AndroidManifest.xml:9:9-54
+		ADDED from /home/shibin/Downloads/RosJoystick-Latest/app/src/main/AndroidManifest.xml:9:9-54
 	android:icon
-		ADDED from /home/shibin/Downloads/RosJoystick-Latest/RosJoystick-Latest/app/src/main/AndroidManifest.xml:8:9-43
+		ADDED from /home/shibin/Downloads/RosJoystick-Latest/app/src/main/AndroidManifest.xml:8:9-43
 	android:allowBackup
-		ADDED from /home/shibin/Downloads/RosJoystick-Latest/RosJoystick-Latest/app/src/main/AndroidManifest.xml:7:9-35
+		ADDED from /home/shibin/Downloads/RosJoystick-Latest/app/src/main/AndroidManifest.xml:7:9-35
 	android:theme
-		ADDED from /home/shibin/Downloads/RosJoystick-Latest/RosJoystick-Latest/app/src/main/AndroidManifest.xml:12:9-50
+		ADDED from /home/shibin/Downloads/RosJoystick-Latest/app/src/main/AndroidManifest.xml:12:9-50
 	android:usesCleartextTraffic
-		ADDED from /home/shibin/Downloads/RosJoystick-Latest/RosJoystick-Latest/app/src/main/AndroidManifest.xml:11:9-44
+		ADDED from /home/shibin/Downloads/RosJoystick-Latest/app/src/main/AndroidManifest.xml:11:9-44
 activity#com.hexaconlabs.rosjoystick.SplashActivity
-ADDED from /home/shibin/Downloads/RosJoystick-Latest/RosJoystick-Latest/app/src/main/AndroidManifest.xml:14:9-22:20
+ADDED from /home/shibin/Downloads/RosJoystick-Latest/app/src/main/AndroidManifest.xml:14:9-22:20
 	android:exported
-		ADDED from /home/shibin/Downloads/RosJoystick-Latest/RosJoystick-Latest/app/src/main/AndroidManifest.xml:16:13-36
+		ADDED from /home/shibin/Downloads/RosJoystick-Latest/app/src/main/AndroidManifest.xml:16:13-36
 	android:theme
-		ADDED from /home/shibin/Downloads/RosJoystick-Latest/RosJoystick-Latest/app/src/main/AndroidManifest.xml:17:13-54
+		ADDED from /home/shibin/Downloads/RosJoystick-Latest/app/src/main/AndroidManifest.xml:17:13-54
 	android:name
-		ADDED from /home/shibin/Downloads/RosJoystick-Latest/RosJoystick-Latest/app/src/main/AndroidManifest.xml:15:13-43
+		ADDED from /home/shibin/Downloads/RosJoystick-Latest/app/src/main/AndroidManifest.xml:15:13-43
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /home/shibin/Downloads/RosJoystick-Latest/RosJoystick-Latest/app/src/main/AndroidManifest.xml:18:13-21:29
+ADDED from /home/shibin/Downloads/RosJoystick-Latest/app/src/main/AndroidManifest.xml:18:13-21:29
 action#android.intent.action.MAIN
-ADDED from /home/shibin/Downloads/RosJoystick-Latest/RosJoystick-Latest/app/src/main/AndroidManifest.xml:19:17-69
+ADDED from /home/shibin/Downloads/RosJoystick-Latest/app/src/main/AndroidManifest.xml:19:17-69
 	android:name
-		ADDED from /home/shibin/Downloads/RosJoystick-Latest/RosJoystick-Latest/app/src/main/AndroidManifest.xml:19:25-66
+		ADDED from /home/shibin/Downloads/RosJoystick-Latest/app/src/main/AndroidManifest.xml:19:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /home/shibin/Downloads/RosJoystick-Latest/RosJoystick-Latest/app/src/main/AndroidManifest.xml:20:17-77
+ADDED from /home/shibin/Downloads/RosJoystick-Latest/app/src/main/AndroidManifest.xml:20:17-77
 	android:name
-		ADDED from /home/shibin/Downloads/RosJoystick-Latest/RosJoystick-Latest/app/src/main/AndroidManifest.xml:20:27-74
+		ADDED from /home/shibin/Downloads/RosJoystick-Latest/app/src/main/AndroidManifest.xml:20:27-74
 activity#com.hexaconlabs.rosjoystick.MainActivity
-ADDED from /home/shibin/Downloads/RosJoystick-Latest/RosJoystick-Latest/app/src/main/AndroidManifest.xml:24:9-27:20
+ADDED from /home/shibin/Downloads/RosJoystick-Latest/app/src/main/AndroidManifest.xml:24:9-27:20
 	android:exported
-		ADDED from /home/shibin/Downloads/RosJoystick-Latest/RosJoystick-Latest/app/src/main/AndroidManifest.xml:26:13-37
+		ADDED from /home/shibin/Downloads/RosJoystick-Latest/app/src/main/AndroidManifest.xml:26:13-37
 	android:name
-		ADDED from /home/shibin/Downloads/RosJoystick-Latest/RosJoystick-Latest/app/src/main/AndroidManifest.xml:25:13-41
+		ADDED from /home/shibin/Downloads/RosJoystick-Latest/app/src/main/AndroidManifest.xml:25:13-41
 uses-sdk
-INJECTED from /home/shibin/Downloads/RosJoystick-Latest/RosJoystick-Latest/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from /home/shibin/Downloads/RosJoystick-Latest/RosJoystick-Latest/app/src/main/AndroidManifest.xml
-INJECTED from /home/shibin/Downloads/RosJoystick-Latest/RosJoystick-Latest/app/src/main/AndroidManifest.xml
+INJECTED from /home/shibin/Downloads/RosJoystick-Latest/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /home/shibin/Downloads/RosJoystick-Latest/app/src/main/AndroidManifest.xml
+INJECTED from /home/shibin/Downloads/RosJoystick-Latest/app/src/main/AndroidManifest.xml
 MERGED from [com.google.android.material:material:1.12.0] /home/shibin/.gradle/caches/9.0.0/transforms/27903eaa68a071496eb056e927a35e9a/transformed/material-1.12.0/AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.material:material:1.12.0] /home/shibin/.gradle/caches/9.0.0/transforms/27903eaa68a071496eb056e927a35e9a/transformed/material-1.12.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.appcompat:appcompat-resources:1.7.0] /home/shibin/.gradle/caches/9.0.0/transforms/990a5645e1a1f56f48eef069c7b50365/transformed/appcompat-resources-1.7.0/AndroidManifest.xml:5:5-44
@@ -206,9 +206,9 @@ MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/s
 MERGED from [androidx.print:print:1.0.0] /home/shibin/.gradle/caches/9.0.0/transforms/f772d4d2e51897c4f8eec8642539ac96/transformed/print-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.print:print:1.0.0] /home/shibin/.gradle/caches/9.0.0/transforms/f772d4d2e51897c4f8eec8642539ac96/transformed/print-1.0.0/AndroidManifest.xml:20:5-44
 	android:targetSdkVersion
-		INJECTED from /home/shibin/Downloads/RosJoystick-Latest/RosJoystick-Latest/app/src/main/AndroidManifest.xml
+		INJECTED from /home/shibin/Downloads/RosJoystick-Latest/app/src/main/AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from /home/shibin/Downloads/RosJoystick-Latest/RosJoystick-Latest/app/src/main/AndroidManifest.xml
+		INJECTED from /home/shibin/Downloads/RosJoystick-Latest/app/src/main/AndroidManifest.xml
 provider#androidx.startup.InitializationProvider
 ADDED from [androidx.emoji2:emoji2:1.3.0] /home/shibin/.gradle/caches/9.0.0/transforms/08a4ab0b6b6ab04698aaf420dfd3cb15/transformed/emoji2-1.3.0/AndroidManifest.xml:24:9-32:20
 MERGED from [androidx.lifecycle:lifecycle-process:2.6.2] /home/shibin/.gradle/caches/9.0.0/transforms/09e01fa984b78112489e4f7ffe6e532d/transformed/lifecycle-process-2.6.2/AndroidManifest.xml:24:9-32:20

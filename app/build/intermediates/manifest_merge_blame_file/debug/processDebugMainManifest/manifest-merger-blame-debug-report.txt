@@ -9,8 +9,8 @@
 9        android:targetSdkVersion="34" />
 10
 11    <uses-permission android:name="android.permission.INTERNET" />
-11-->/home/shibin/Downloads/RosJoystick-Latest/RosJoystick-Latest/app/src/main/AndroidManifest.xml:4:5-67
-11-->/home/shibin/Downloads/RosJoystick-Latest/RosJoystick-Latest/app/src/main/AndroidManifest.xml:4:22-64
+11-->/home/shibin/Downloads/RosJoystick-Latest/app/src/main/AndroidManifest.xml:4:5-67
+11-->/home/shibin/Downloads/RosJoystick-Latest/app/src/main/AndroidManifest.xml:4:22-64
 12
 13    <permission
 13-->[androidx.core:core:1.13.1] /home/shibin/.gradle/caches/9.0.0/transforms/cba2111e9382ec0ab83a31a8d4e4b5a8/transformed/core-1.13.1/AndroidManifest.xml:22:5-24:47
@@ -24,49 +24,49 @@
 17-->[androidx.core:core:1.13.1] /home/shibin/.gradle/caches/9.0.0/transforms/cba2111e9382ec0ab83a31a8d4e4b5a8/transformed/core-1.13.1/AndroidManifest.xml:26:22-94
 18
 19    <application
-19-->/home/shibin/Downloads/RosJoystick-Latest/RosJoystick-Latest/app/src/main/AndroidManifest.xml:6:5-28:19
+19-->/home/shibin/Downloads/RosJoystick-Latest/app/src/main/AndroidManifest.xml:6:5-28:19
 20        android:allowBackup="true"
-20-->/home/shibin/Downloads/RosJoystick-Latest/RosJoystick-Latest/app/src/main/AndroidManifest.xml:7:9-35
+20-->/home/shibin/Downloads/RosJoystick-Latest/app/src/main/AndroidManifest.xml:7:9-35
 21        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
 21-->[androidx.core:core:1.13.1] /home/shibin/.gradle/caches/9.0.0/transforms/cba2111e9382ec0ab83a31a8d4e4b5a8/transformed/core-1.13.1/AndroidManifest.xml:28:18-86
 22        android:debuggable="true"
 23        android:extractNativeLibs="false"
 24        android:icon="@mipmap/ic_launcher"
-24-->/home/shibin/Downloads/RosJoystick-Latest/RosJoystick-Latest/app/src/main/AndroidManifest.xml:8:9-43
+24-->/home/shibin/Downloads/RosJoystick-Latest/app/src/main/AndroidManifest.xml:8:9-43
 25        android:label="ROS2 Joystick"
-25-->/home/shibin/Downloads/RosJoystick-Latest/RosJoystick-Latest/app/src/main/AndroidManifest.xml:10:9-38
+25-->/home/shibin/Downloads/RosJoystick-Latest/app/src/main/AndroidManifest.xml:10:9-38
 26        android:roundIcon="@mipmap/ic_launcher_round"
-26-->/home/shibin/Downloads/RosJoystick-Latest/RosJoystick-Latest/app/src/main/AndroidManifest.xml:9:9-54
+26-->/home/shibin/Downloads/RosJoystick-Latest/app/src/main/AndroidManifest.xml:9:9-54
 27        android:testOnly="true"
 28        android:theme="@style/Theme.HexaJoystick"
-28-->/home/shibin/Downloads/RosJoystick-Latest/RosJoystick-Latest/app/src/main/AndroidManifest.xml:12:9-50
+28-->/home/shibin/Downloads/RosJoystick-Latest/app/src/main/AndroidManifest.xml:12:9-50
 29        android:usesCleartextTraffic="true" >
-29-->/home/shibin/Downloads/RosJoystick-Latest/RosJoystick-Latest/app/src/main/AndroidManifest.xml:11:9-44
+29-->/home/shibin/Downloads/RosJoystick-Latest/app/src/main/AndroidManifest.xml:11:9-44
 30        <activity
-30-->/home/shibin/Downloads/RosJoystick-Latest/RosJoystick-Latest/app/src/main/AndroidManifest.xml:14:9-22:20
+30-->/home/shibin/Downloads/RosJoystick-Latest/app/src/main/AndroidManifest.xml:14:9-22:20
 31            android:name="com.hexaconlabs.rosjoystick.SplashActivity"
-31-->/home/shibin/Downloads/RosJoystick-Latest/RosJoystick-Latest/app/src/main/AndroidManifest.xml:15:13-43
+31-->/home/shibin/Downloads/RosJoystick-Latest/app/src/main/AndroidManifest.xml:15:13-43
 32            android:exported="true"
-32-->/home/shibin/Downloads/RosJoystick-Latest/RosJoystick-Latest/app/src/main/AndroidManifest.xml:16:13-36
+32-->/home/shibin/Downloads/RosJoystick-Latest/app/src/main/AndroidManifest.xml:16:13-36
 33            android:theme="@style/Theme.HexaJoystick" >
-33-->/home/shibin/Downloads/RosJoystick-Latest/RosJoystick-Latest/app/src/main/AndroidManifest.xml:17:13-54
+33-->/home/shibin/Downloads/RosJoystick-Latest/app/src/main/AndroidManifest.xml:17:13-54
 34            <intent-filter>
-34-->/home/shibin/Downloads/RosJoystick-Latest/RosJoystick-Latest/app/src/main/AndroidManifest.xml:18:13-21:29
+34-->/home/shibin/Downloads/RosJoystick-Latest/app/src/main/AndroidManifest.xml:18:13-21:29
 35                <action android:name="android.intent.action.MAIN" />
-35-->/home/shibin/Downloads/RosJoystick-Latest/RosJoystick-Latest/app/src/main/AndroidManifest.xml:19:17-69
-35-->/home/shibin/Downloads/RosJoystick-Latest/RosJoystick-Latest/app/src/main/AndroidManifest.xml:19:25-66
+35-->/home/shibin/Downloads/RosJoystick-Latest/app/src/main/AndroidManifest.xml:19:17-69
+35-->/home/shibin/Downloads/RosJoystick-Latest/app/src/main/AndroidManifest.xml:19:25-66
 36
 37                <category android:name="android.intent.category.LAUNCHER" />
-37-->/home/shibin/Downloads/RosJoystick-Latest/RosJoystick-Latest/app/src/main/AndroidManifest.xml:20:17-77
-37-->/home/shibin/Downloads/RosJoystick-Latest/RosJoystick-Latest/app/src/main/AndroidManifest.xml:20:27-74
+37-->/home/shibin/Downloads/RosJoystick-Latest/app/src/main/AndroidManifest.xml:20:17-77
+37-->/home/shibin/Downloads/RosJoystick-Latest/app/src/main/AndroidManifest.xml:20:27-74
 38            </intent-filter>
 39        </activity>
 40        <activity
-40-->/home/shibin/Downloads/RosJoystick-Latest/RosJoystick-Latest/app/src/main/AndroidManifest.xml:24:9-27:20
+40-->/home/shibin/Downloads/RosJoystick-Latest/app/src/main/AndroidManifest.xml:24:9-27:20
 41            android:name="com.hexaconlabs.rosjoystick.MainActivity"
-41-->/home/shibin/Downloads/RosJoystick-Latest/RosJoystick-Latest/app/src/main/AndroidManifest.xml:25:13-41
+41-->/home/shibin/Downloads/RosJoystick-Latest/app/src/main/AndroidManifest.xml:25:13-41
 42            android:exported="false" >
-42-->/home/shibin/Downloads/RosJoystick-Latest/RosJoystick-Latest/app/src/main/AndroidManifest.xml:26:13-37
+42-->/home/shibin/Downloads/RosJoystick-Latest/app/src/main/AndroidManifest.xml:26:13-37
 43        </activity>
 44
 45        <provider
