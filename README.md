@@ -1,89 +1,139 @@
-# ROS2 Joystick — Android app to drive turtlesim (ROS2 Jazzy)
+<div align="center">
 
-An Android joystick that connects to ROS2 over **rosbridge** and:
+<img src="docs/images/banner.png" alt="Hexa Joystick banner" width="100%" />
 
-1. Publishes `geometry_msgs/Twist` to `/turtle1/cmd_vel` to move the turtle.
-2. Publishes `std_msgs/String` ("UP"/"DOWN"/"LEFT"/"RIGHT"/"CENTER") to
-   `/joystick/direction` so you can `ros2 topic echo` which arrow is pressed.
+# Hexa Joystick
 
-No native ROS2 client library is needed on Android — it talks to
-`rosbridge_server` over a plain WebSocket, which is the standard way to
-bridge ROS2 to phones/web apps.
+**A Kotlin Android joystick that drives a ROS2 `turtlesim` turtle over `rosbridge`.**
+
+[![Platform](https://img.shields.io/badge/platform-Android-3DDC84?logo=android&logoColor=white)](#)
+[![Language](https://img.shields.io/badge/language-Kotlin-7F52FF?logo=kotlin&logoColor=white)](#)
+[![ROS2](https://img.shields.io/badge/ROS2-Jazzy-22314E?logo=ros&logoColor=white)](#)
+[![License](https://img.shields.io/badge/license-MIT-00E5A0)](#)
+
+</div>
+
+---
+
+## Overview
+
+**Hexa Joystick** is a small Android app built as teaching material for a
+YouTube tutorial on bridging Android and ROS2. It shows two things at once:
+
+- an on-screen analog joystick publishing `geometry_msgs/Twist` to
+  `/turtle1/cmd_vel`, driving a `turtlesim` turtle in real time
+- the *discrete* direction (`UP` / `DOWN` / `LEFT` / `RIGHT` / `CENTER`)
+  published separately to `/joystick/direction`, so viewers can `ros2 topic
+  echo` exactly which arrow is "pressed" at any moment
+
+No native ROS2 SDK on the phone — just a WebSocket talking to
+`rosbridge_server`, which is the standard, lightweight way to connect
+phones/web apps to a ROS2 graph.
+
+<p align="center">
+  <img src="docs/images/app_screenshot.png" alt="App screenshot" width="320" />
+</p>
+
+## Features
+
+| | |
+|---|---|
+| 🕹️ **Analog joystick** | Custom `View`, smooth drag, snaps back to center on release |
+| 📡 **Live ROS2 bridge** | Publishes `Twist` to `/turtle1/cmd_vel` over `rosbridge`, throttled to ~20 Hz |
+| 🧭 **Direction events** | Separate `std_msgs/String` topic (`/joystick/direction`) fires only on change |
+| 🎨 **Modern dark UI** | Card-based layout, mint accent theme, live connection status dot |
+| 🔧 **Fully tweakable** | Speed limits, dead-zone, publish rate, colors, and logo are all single-point edits |
 
 ## Architecture
 
+<p align="center">
+  <img src="docs/images/architecture.png" alt="Architecture diagram" width="100%" />
+</p>
+
+The app never talks ROS2 directly — it sends plain JSON over a WebSocket
+using the [rosbridge v2 protocol](https://github.com/RobotWebTools/rosbridge_suite),
+and `rosbridge_server` translates that onto the ROS2 graph.
+
+## Project structure
+
 ```
-[Android Joystick App] --ws://<PC-IP>:9090--> [rosbridge_server] --> ROS2 Jazzy --> [turtlesim]
+RosJoystick/
+├── app/src/main/java/com/example/rosjoystick/
+│   ├── JoystickView.kt      # Custom touch-driven joystick, outputs normalized x/y
+│   ├── RosBridgeClient.kt   # OkHttp WebSocket wrapper speaking rosbridge JSON
+│   └── MainActivity.kt      # Wires joystick → Twist + direction publishing
+├── app/src/main/res/
+│   ├── layout/activity_main.xml   # Card-based modern UI
+│   ├── values/colors.xml          # Theme palette (edit this to restyle everything)
+│   ├── values/themes.xml
+│   └── drawable-*/logo.png        # App logo, one per density bucket
+└── docs/images/                   # Assets used in this README
 ```
 
-## Part 1 — ROS2 side (Ubuntu with ROS2 Jazzy)
+## Quick start
 
-1. Install turtlesim and rosbridge:
-   ```bash
-   sudo apt update
-   sudo apt install ros-jazzy-turtlesim ros-jazzy-rosbridge-suite
-   source /opt/ros/jazzy/setup.bash
-   ```
+### 1. ROS2 side (Ubuntu + ROS2 Jazzy)
 
-2. Terminal A — start turtlesim:
-   ```bash
-   ros2 run turtlesim turtlesim_node
-   ```
+```bash
+sudo apt update
+sudo apt install ros-jazzy-turtlesim ros-jazzy-rosbridge-suite
+source /opt/ros/jazzy/setup.bash
 
-3. Terminal B — start rosbridge (default port 9090):
-   ```bash
-   ros2 launch rosbridge_server rosbridge_websocket_launch.xml
-   ```
+# Terminal A
+ros2 run turtlesim turtlesim_node
 
-4. Terminal C — find your PC's LAN IP (the phone needs this):
-   ```bash
-   hostname -I
-   ```
-   Make sure your phone and PC are on the same Wi-Fi network, and that
-   your firewall allows inbound TCP on port 9090:
-   ```bash
-   sudo ufw allow 9090/tcp   # if ufw is enabled
-   ```
+# Terminal B
+ros2 launch rosbridge_server rosbridge_websocket_launch.xml
+```
 
-5. (Optional, for the video) Watch the topics live while you test:
-   ```bash
-   ros2 topic echo /turtle1/cmd_vel
-   ros2 topic echo /joystick/direction
-   ```
+Find your PC's LAN IP (the phone needs it):
 
-## Part 2 — Android app
+```bash
+hostname -I
+```
 
-1. Open this folder (`RosJoystick/`) in Android Studio as an existing project
-   and let Gradle sync.
+Make sure your phone and PC share a network and port `9090` is open:
 
-2. Files of interest:
-   - `JoystickView.kt` — custom `View` that draws the joystick and reports
-     normalized `x`/`y` in `[-1, 1]` (up = +y, right = +x).
-   - `RosBridgeClient.kt` — tiny OkHttp WebSocket wrapper that speaks the
-     rosbridge v2 JSON protocol (`advertise` / `publish` ops).
-   - `MainActivity.kt` — wires the joystick to the client: converts
-     `x,y` into a `Twist`, throttles publishing to ~20 Hz, and detects which
-     of the 4 directions (or center) is active for the direction topic.
+```bash
+sudo ufw allow 9090/tcp   # if ufw is enabled
+```
 
-3. Run the app on a real phone (recommended for a smooth demo — the
-   emulator's virtual joystick input can feel laggy on camera) or an
-   emulator with network access to your PC.
+Optional, to watch topics live while testing:
 
-4. In the app, enter the rosbridge URL, e.g.:
-   ```
-   ws://192.168.1.42:9090
-   ```
-   and tap **Connect**. Status should change to "Connected: ...".
+```bash
+ros2 topic echo /turtle1/cmd_vel
+ros2 topic echo /joystick/direction
+```
 
-5. Drag the on-screen joystick — the turtle in the `turtlesim` window should
-   move, and the "Direction" label plus `/joystick/direction` topic should
-   update as you cross into each zone (dead-zone of 25% in the center).
+### 2. Android side
 
-## Tuning
+1. Open the `RosJoystick/` folder in Android Studio, let Gradle sync.
+2. Run on a real device (recommended — smoother touch input on camera) or
+   an emulator with LAN access to your PC.
+3. Enter the rosbridge URL, e.g. `ws://192.168.1.42:9090`, tap **Connect**.
+4. Drag the joystick — the turtle moves, and the direction chip / topic
+   update as you cross into each zone (25% dead-zone in the center).
 
-- `MainActivity.MAX_LINEAR_SPEED` / `MAX_ANGULAR_SPEED` — top speed sent to
-  the turtle.
-- `deadZone` in `updateDirection()` — how far from center before a
-  direction registers.
-- Publish rate — change the `50` (ms) in `handler.postDelayed(this, 50)`
-  for a faster/slower `cmd_vel` stream.
+## Customization
+
+| Want to change... | Edit... |
+|---|---|
+| Top speed | `MainActivity.MAX_LINEAR_SPEED` / `MAX_ANGULAR_SPEED` |
+| Dead-zone size | `deadZone` in `MainActivity.updateDirection()` |
+| Publish rate | the `50` (ms) in `handler.postDelayed(this, 50)` |
+| Accent/theme colors | `res/values/colors.xml` |
+| App title/subtitle | `res/values/strings.xml` (`app_title`, `app_subtitle`) |
+| Logo | overwrite `res/drawable-*/logo.png` at the matching pixel size (48/72/96/144/192px), or regenerate from `logo_master_512.png` |
+
+## Suggested tutorial outline
+
+1. **Hook** — show the finished result first: phone joystick driving turtlesim live.
+2. **Architecture** — walk through the diagram above; explain why rosbridge instead of a native ROS2 client.
+3. **ROS2 setup** — install `rosbridge_suite` + `turtlesim`, launch both, `ros2 topic list`.
+4. **Code walkthrough** — `JoystickView` (touch math) → `RosBridgeClient` (raw rosbridge JSON) → `MainActivity` (wiring, throttling, direction detection).
+5. **Live demo** — connect, drive the turtle; split-screen the phone (e.g. via `scrcpy`) next to the turtlesim window and a terminal running `ros2 topic echo /joystick/direction`.
+6. **Wrap-up** — mention swapping the topic name/type in `advertise()`/`publishTwist()` to drive a real robot instead of `turtlesim`.
+
+## License
+
+MIT — use it freely for your own tutorials or projects.
