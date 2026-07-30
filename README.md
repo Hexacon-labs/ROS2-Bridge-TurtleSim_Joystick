@@ -127,15 +127,6 @@ ros2 topic echo /joystick/direction
 | App title/subtitle | `res/values/strings.xml` (`app_title`, `app_subtitle`) |
 | Logo | overwrite `res/drawable-*/logo.png` at the matching pixel size (48/72/96/144/192px), or regenerate from `logo_master_512.png` |
 
-## Suggested tutorial outline
-
-1. **Hook** — show the finished result first: phone joystick driving turtlesim live.
-2. **Architecture** — walk through the diagram above; explain why rosbridge instead of a native ROS2 client.
-3. **ROS2 setup** — install `rosbridge_suite` + `turtlesim`, launch both, `ros2 topic list`.
-4. **Code walkthrough** — `JoystickView` (touch math) → `RosBridgeClient` (raw rosbridge JSON) → `MainActivity` (wiring, throttling, direction detection).
-5. **Live demo** — connect, drive the turtle; split-screen the phone (e.g. via `scrcpy`) next to the turtlesim window and a terminal running `ros2 topic echo /joystick/direction`.
-6. **Wrap-up** — mention swapping the topic name/type in `advertise()`/`publishTwist()` to drive a real robot instead of `turtlesim`.
-
 ## License
 
 MIT — use it freely for your own projects.
