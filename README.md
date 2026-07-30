@@ -31,7 +31,7 @@ phones/web apps to a ROS2 graph.
 
 <p align="center">
   <img src="docs/images/app_screenshot.png" alt="App screenshot" width="320" />
-  <img src="docs/images/turtle.png" alt="turtle" width="610" />
+  <img src="docs/images/turtle.png" alt="turtle" width="420" />
 </p>
 
 ## Features
