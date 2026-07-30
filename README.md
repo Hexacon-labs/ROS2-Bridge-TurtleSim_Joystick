@@ -140,6 +140,7 @@ ros2 topic echo /joystick/direction
 MIT — use it freely for your own projects.
 
 ## Project Author
+<img src="docs/images/logo.png" alt="Hexaconlabs Logo" width="100%" />
 
 **Name:** Shibin AK | **Website:** www.hexaconlabs.com | **Email:** info@hexaconlabs.com | shibin@hexaconlabs.com
 
