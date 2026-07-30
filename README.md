@@ -2,7 +2,7 @@
 
 <img src="docs/images/banner.png" alt="Hexa Joystick banner" width="100%" />
 
-# Hexa Joystick
+# ROS Bridge TurtleSim Joystick
 
 **A Kotlin Android joystick that drives a ROS2 `turtlesim` turtle over `rosbridge`.**
 
@@ -17,8 +17,7 @@
 
 ## Overview
 
-**Hexa Joystick** is a small Android app built as teaching material for a
-YouTube tutorial on bridging Android and ROS2. It shows two things at once:
+**ROS Bridge TurtleSim Joystick** is a small Android app built as teaching material for bridging Android Application and ROS2. It shows two things at once:
 
 - an on-screen analog joystick publishing `geometry_msgs/Twist` to
   `/turtle1/cmd_vel`, driving a `turtlesim` turtle in real time
@@ -57,11 +56,13 @@ and `rosbridge_server` translates that onto the ROS2 graph.
 ## Project structure
 
 ```
-RosJoystick/
-├── app/src/main/java/com/example/rosjoystick/
+ROS2_TurtleSim_Joystick/
+├── app/src/main/java/com/hexaconlabs/rosjoystick/
 │   ├── JoystickView.kt      # Custom touch-driven joystick, outputs normalized x/y
 │   ├── RosBridgeClient.kt   # OkHttp WebSocket wrapper speaking rosbridge JSON
 │   └── MainActivity.kt      # Wires joystick → Twist + direction publishing
+│   └── SplashActivity.kt    # Splash Screen with Dynamic Loading Text
+│
 ├── app/src/main/res/
 │   ├── layout/activity_main.xml   # Card-based modern UI
 │   ├── values/colors.xml          # Theme palette (edit this to restyle everything)
@@ -136,4 +137,10 @@ ros2 topic echo /joystick/direction
 
 ## License
 
-MIT — use it freely for your own tutorials or projects.
+MIT — use it freely for your own projects.
+
+## Project Author
+
+**Name:** Shibin AK | **Website:** www.hexaconlabs.com | **Email:** info@hexaconlabs.com | shibin@hexaconlabs.com
+
+
