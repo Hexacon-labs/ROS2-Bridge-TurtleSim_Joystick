@@ -30,6 +30,7 @@ No native ROS2 SDK on the phone — just a WebSocket talking to
 phones/web apps to a ROS2 graph.
 
 <p align="center">
+  <img src="docs/images/turtle.png" alt="App screenshot" width="320" />
   <img src="docs/images/app_screenshot.png" alt="App screenshot" width="320" />
 </p>
 
@@ -140,8 +141,12 @@ ros2 topic echo /joystick/direction
 MIT — use it freely for your own projects.
 
 ## Project Author
-<img src="docs/images/logo.png" alt="Hexaconlabs Logo" width="100%" />
-
-**Name:** Shibin AK | **Website:** www.hexaconlabs.com | **Email:** info@hexaconlabs.com | shibin@hexaconlabs.com
-
+<p align="center">
+  <img src="docs/images/logo.png" alt="Hexacon Labs" width="30%" />
+</p>
+<p align="center">
+  <body>
+    Shibin AK | www.hexaconlabs.com | info@hexaconlabs.com | shibin@hexaconlabs.com
+  </body>
+</p>
 
